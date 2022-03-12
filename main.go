@@ -28,7 +28,7 @@ const startupMessage = `
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello! This service is under contruction. Thanks for visiting! %s\n", r.URL.Path)
+		fmt.Fprintf(w, "Hello! The current date is: Saturday, March 12 2022. Thanks for visiting! %s\n", r.URL.Path)
 	})
 
 	port := os.Getenv("PORT")
